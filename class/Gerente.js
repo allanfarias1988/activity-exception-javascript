@@ -7,8 +7,6 @@ export default class Gerente extends ModeloFuncionario {
   }
 
   gerenciar() {
-    console.log(
-      `Meu nome é ${this.nome}, tenho ${this.idade} anos, atuo como ${this.cargo} e gerencio o departamento de ${this.departamento}`
-    );
+    return `Meu nome é ${this.nome}, tenho ${this.idade} anos, atuo como ${this.cargo} e gerencio o departamento de ${this.departamento}`;
   }
 }

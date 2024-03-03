@@ -30,12 +30,15 @@ buttonSubmit.addEventListener("click", (event) => {
       exibirErro();
     }
 
-    desenvolvedor.programar();
-    gerente.gerenciar();
+    console.log(desenvolvedor.programar());
+    console.log(gerente.gerenciar());
 
-    const p = document.createElement("p");
-    p.innerText = `${desenvolvedor.programar()}, ${gerente.gerenciar()}`;
-    container.appendChild(p);
+    container.innerHTML = `
+      <div class="hello">
+        <p>${desenvolvedor.programar()}</p>
+        <p>${gerente.gerenciar()}</p>
+      </div>
+   `;
   } catch (e) {
     console.error("Error:", e.message);
   }

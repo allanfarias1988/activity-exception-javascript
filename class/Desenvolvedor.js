@@ -7,8 +7,6 @@ export default class Desenvolvedor extends ModeloFuncionario {
   }
 
   programar() {
-    console.log(
-      `Meu nome é ${this.nome}, tenho ${this.idade} anos, sou ${this.cargo} e programo em ${this.linguagem}`
-    );
+    return `Meu nome é ${this.nome}, tenho ${this.idade} anos, sou ${this.cargo} e programo em ${this.linguagem}`;
   }
 }

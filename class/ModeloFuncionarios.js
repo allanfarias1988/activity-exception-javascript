@@ -5,10 +5,10 @@ export default class ModeloFuncionario {
     this.cargo = cargo;
   }
   seApresentar() {
-    console.log(`Meu nome é: ${this.nome}, tenho ${this.idade}.`);
+    return `Meu nome é: ${this.nome}, tenho ${this.idade}.`;
   }
 
   trabalhar() {
-    console.log(`Trabalho no cargo de ${this.cargo} `);
+    return `Trabalho no cargo de ${this.cargo} `;
   }
 }
